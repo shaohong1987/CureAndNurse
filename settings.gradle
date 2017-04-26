@@ -1,1 +1,1 @@
-include ':app', ':cureandnurselib'
+include ':app'
