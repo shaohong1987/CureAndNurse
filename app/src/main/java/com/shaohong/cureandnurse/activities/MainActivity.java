@@ -97,7 +97,7 @@ public class MainActivity extends BaseActivity
         }
     }
 
-    public void switchContent(Fragment to) {
+    public void switchContent(Fragment to1) {
         if (currentFragment != to) {
             if (!to.isAdded()) {
                 if (currentFragment != null) {
