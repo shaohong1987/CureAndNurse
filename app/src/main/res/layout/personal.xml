@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/userimage"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/common_margin"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/personal_info_menu_layout"
+            style="@style/wrap_layout">
+            <!-- 上圆角-->
+            <LinearLayout style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="个人资料"/>
+
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line"/>
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="错题集"/>
+
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout">
+            <!-- 上圆角-->
+            <LinearLayout style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="设置"/>
+
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line"/>
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="联系我们"/>
+
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

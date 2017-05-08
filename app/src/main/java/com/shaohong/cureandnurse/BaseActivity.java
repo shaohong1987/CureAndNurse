@@ -10,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 /**
@@ -25,6 +27,13 @@ public class BaseActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            Window window = getWindow();
+//            // Translucent status bar
+//            window.setFlags(
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//        }
     }
 
     public void showLongToast(Context context,String msg){

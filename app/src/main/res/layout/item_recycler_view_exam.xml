@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <ImageView
+        android:id="@+id/image_item_recycler_view_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:contentDescription="图片"
+        android:src="@drawable/a"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/name_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名称：三基考试"
+                android:layout_marginTop="16sp"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/datetime_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textSize="16sp"
+                android:text="时间：2017-05-28 14:30"/>
+            <TextView
+                android:id="@+id/address_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8sp"
+                android:text="地点：第三会议室"/>
+            <TextView
+                android:id="@+id/status_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8sp"
+                android:text="已报名"/>
+        </LinearLayout>
+</LinearLayout>
